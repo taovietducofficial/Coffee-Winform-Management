@@ -64,4 +64,70 @@ The coffee shop management system (for managing coffee sales) is primarily used 
 
 - Check the remaining quantity of ingredients in stock or retrieve information about any ingredient.
   
-## [1] CRUD: Create, Read, Update, Delete.
+#### [1] CRUD: Create, Read, Update, Delete.
+
+## SYSTEM DESIGN ANALYSIS
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture3.jpg" width="1000" />
+</p>
+
+
+## From the above relationship diagram, we build the diagram:
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture4.png" width="1000" />
+</p>
+
+## An example of a Trigger in a project, the Trigger automatically reduces ingredients on the order table.
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Screenshot%202025-02-27%20081450.png" width="1000" />
+</p>
+
+## DESIGN OF FUNCTIONS
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture5.png" width="1000" />
+</p>
+
+- GUI Layer: The user performs an action on the user interface (such as clicking a button, moving the mouse over an object, changing a variable value, etc.). When there is a request to query the database (read or write data), this layer will call the DAO layer to execute the query. Data is sent in the form of DTO classes.
+
+- DAL/DAO Layer: When receiving a query request from the GUI, this layer is responsible for communicating with the database to send queries and retrieve values, including Data Tables, Data Sets, variables, query errors (if any), and returning them to the GUI layer in the form of DTO data.
+
+- DTO Layer: The DTO layer usually only contains attributes for storing data and does not include methods for processing data. The main purpose of the DTO layer is to define data structures to efficiently transfer data between components in the application. It is often used to reduce the complexity of transmitted data by only sending necessary information and eliminating unnecessary details.
+
+# INTERFACE DESIGN
+## Invoice creation form:
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture2.png" width="1000" />
+</p>
+
+## Form Menu
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture6.png" width="1000" />
+</p>
+
+
+## Form Ingredients:
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture7.png" width="1000" />
+</p>
+
+
+## Invoice Management Form
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture8.png" width="1000" />
+</p>
+
+## Customer Management Form:
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture9.png" width="1000" />
+</p>
+
+## Employee Management Form:
+<p align="center">
+  <img src="https://github.com/taovietducofficial/Coffee-Winform-Management/blob/master/Picture10.png" width="1000" />
+</p>
+
+# THANK YOU FOR WATCHING!
+<p align="justify">
+Only 85% of the complete code has been pushed due to certain ownership rights reasons from me. Please review and respect this. Thank you very much!
+</p>
+
